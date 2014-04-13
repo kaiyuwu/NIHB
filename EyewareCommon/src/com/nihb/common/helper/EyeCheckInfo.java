@@ -12,7 +12,6 @@ public class EyeCheckInfo {
 	
 
 	public EyeCheckInfo() {
-		// TODO Auto-generated constructor stub
 	}
 
 

@@ -1,5 +1,7 @@
 package com.nihb.common.helper;
 
+import java.math.BigDecimal;
+
 public class GlassesDetail {
 
 	GlassesItem frame;
@@ -187,5 +189,22 @@ public class GlassesDetail {
 		this.other2 = other2;
 	}
 
-	
+	public NihbDecimal getAmount(){
+		BigDecimal amount = new BigDecimal(0);
+		amount.add(this.frame.getCost().getAmount());
+		amount.add(this.rightLens.getCost().getAmount());
+		amount.add(this.leftLens.getCost().getAmount());
+		amount.add(this.scr.getCost().getAmount());
+
+		amount.add(this.hardexCoating.getCost().getAmount());
+		amount.add(this.edging.getCost().getAmount());
+		amount.add(this.nylongroving.getCost().getAmount());
+		amount.add(this.glassesCase.getCost().getAmount());
+		amount.add(this.framefront.getCost().getAmount());
+		amount.add(this.temple.getCost().getAmount());
+		amount.add(this.other1.getCost().getAmount());
+		amount.add(this.other2.getCost().getAmount());
+		
+		return new NihbDecimal(amount);
+	}
 }

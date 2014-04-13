@@ -1,9 +1,9 @@
 package com.nihb.common.helper;
 
-import org.joda.time.DateTime;
+import org.joda.time.LocalDateTime;
 
 public class InjuryInfo {
-	DateTime injuryDate;
+	LocalDateTime injuryDate;
 	String injuryPlace;
 	String injuryOther;
 	boolean otherInjuryPlan;
@@ -20,14 +20,14 @@ public class InjuryInfo {
 	/**
 	 * @return the injuryDate
 	 */
-	public DateTime getInjuryDate() {
+	public LocalDateTime getInjuryDate() {
 		return injuryDate;
 	}
 
 	/**
 	 * @param injuryDate the injuryDate to set
 	 */
-	public void setInjuryDate(DateTime injuryDate) {
+	public void setInjuryDate(LocalDateTime injuryDate) {
 		this.injuryDate = injuryDate;
 	}
 

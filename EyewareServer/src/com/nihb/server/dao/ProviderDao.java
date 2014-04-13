@@ -199,7 +199,7 @@ public class ProviderDao extends AbstractDataAccess<Provider> {
 		Provider provider = entity;
 		CallableStatement csProvider = this.conn.prepareCall(UPDATE_PROVIDER);
 		int idx=1;
-		csProvider.setLong(1, provider.getId());
+		csProvider.setLong(idx++, provider.getId());
 		csProvider.setString(idx++, provider.getName());
 		csProvider.setString(idx++, Character.toString(provider.getType().Value));
 		csProvider.setString(idx++, provider.getEmail());

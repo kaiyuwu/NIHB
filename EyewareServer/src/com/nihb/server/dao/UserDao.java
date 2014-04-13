@@ -265,7 +265,7 @@ public class UserDao extends AbstractDataAccess<User> {
 		User user = entity;
 		CallableStatement csUser = this.conn.prepareCall(UPDATE_USER);
 		int idx=1;
-		csUser.setLong(1, user.getId());
+		csUser.setLong(idx++, user.getId());
 		csUser.setString(idx++, user.getFirstname());
 		csUser.setString(idx++, user.getLastname());
 		csUser.setString(idx++, Character.toString(user.getType().Value));

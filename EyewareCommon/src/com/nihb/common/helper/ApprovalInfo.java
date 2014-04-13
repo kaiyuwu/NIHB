@@ -1,6 +1,6 @@
 package com.nihb.common.helper;
 
-import org.joda.time.DateTime;
+import org.joda.time.LocalDateTime;
 
 import com.nihb.common.entity.User;
 
@@ -8,7 +8,7 @@ public class ApprovalInfo {
 
 	Status approvalStatus;
 	User approvalBy;
-	DateTime approvedAt;
+	LocalDateTime approvedAt;
 	String approvalNumber;
 	String denialReason;
 	
@@ -46,14 +46,14 @@ public class ApprovalInfo {
 	/**
 	 * @return the approvedAt
 	 */
-	public DateTime getApprovedAt() {
+	public LocalDateTime getApprovedAt() {
 		return approvedAt;
 	}
 
 	/**
 	 * @param approvedAt the approvedAt to set
 	 */
-	public void setApprovedAt(DateTime approvedAt) {
+	public void setApprovedAt(LocalDateTime approvedAt) {
 		this.approvedAt = approvedAt;
 	}
 

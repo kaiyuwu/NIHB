@@ -172,6 +172,8 @@ public final class NihbDecimal implements Comparable<NihbDecimal>, Serializable 
   
   /** Return the amount passed to the constructor. */
   public BigDecimal getAmount() { return fAmount; }
+
+
   
   /** Return the currency passed to the constructor, or the default currency. */
   public Currency getCurrency() { return fCurrency; }

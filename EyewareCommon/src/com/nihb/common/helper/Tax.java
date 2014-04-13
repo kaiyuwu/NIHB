@@ -2,54 +2,54 @@ package com.nihb.common.helper;
 
 public class Tax {
 
-	NihbDecimal exam_gst;
-	NihbDecimal exam_pst;
-	NihbDecimal exam_hst;
+	NihbDecimal gst;
+	NihbDecimal pst;
+	NihbDecimal hst;
 
 	public Tax() {
 		// TODO Auto-generated constructor stub
 	}
 
 	/**
-	 * @return the exam_gst
+	 * @return the gst
 	 */
-	public NihbDecimal getExam_gst() {
-		return exam_gst;
+	public NihbDecimal getGst() {
+		return gst;
 	}
 
 	/**
-	 * @param exam_gst the exam_gst to set
+	 * @param gst the gst to set
 	 */
-	public void setExam_gst(NihbDecimal exam_gst) {
-		this.exam_gst = exam_gst;
+	public void setGst(NihbDecimal gst) {
+		this.gst = gst;
 	}
 
 	/**
-	 * @return the exam_pst
+	 * @return the pst
 	 */
-	public NihbDecimal getExam_pst() {
-		return exam_pst;
+	public NihbDecimal getPst() {
+		return pst;
 	}
 
 	/**
-	 * @param exam_pst the exam_pst to set
+	 * @param pst the pst to set
 	 */
-	public void setExam_pst(NihbDecimal exam_pst) {
-		this.exam_pst = exam_pst;
+	public void setPst(NihbDecimal pst) {
+		this.pst = pst;
 	}
 
 	/**
-	 * @return the exam_hst
+	 * @return the hst
 	 */
-	public NihbDecimal getExam_hst() {
-		return exam_hst;
+	public NihbDecimal getHst() {
+		return hst;
 	}
 
 	/**
 	 * @param exam_hst the exam_hst to set
 	 */
-	public void setExam_hst(NihbDecimal exam_hst) {
-		this.exam_hst = exam_hst;
+	public void setHst(NihbDecimal hst) {
+		this.hst = hst;
 	}
 
 	

@@ -12,7 +12,6 @@ public class GlassesInfo {
 	PaymentInfo paymentInfo;
 
 	public GlassesInfo() {
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

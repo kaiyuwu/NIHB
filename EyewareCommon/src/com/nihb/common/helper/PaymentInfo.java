@@ -1,6 +1,6 @@
 package com.nihb.common.helper;
 
-import org.joda.time.DateTime;
+import org.joda.time.LocalDateTime;
 
 import com.nihb.common.entity.User;
 
@@ -10,7 +10,7 @@ public class PaymentInfo {
 	Tax tax;
 	Status paymentStatus;
 	User paymentBy;
-	DateTime paymentAt;
+	LocalDateTime paymentAt;
 	String invoiceNumber;
 	
 
@@ -102,7 +102,7 @@ public class PaymentInfo {
 	/**
 	 * @return the paymentAt
 	 */
-	public DateTime getPaymentAt() {
+	public LocalDateTime getPaymentAt() {
 		return paymentAt;
 	}
 
@@ -110,7 +110,7 @@ public class PaymentInfo {
 	/**
 	 * @param paymentAt the paymentAt to set
 	 */
-	public void setPaymentAt(DateTime paymentAt) {
+	public void setPaymentAt(LocalDateTime paymentAt) {
 		this.paymentAt = paymentAt;
 	}
 

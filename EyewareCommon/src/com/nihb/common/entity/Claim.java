@@ -8,7 +8,7 @@ public class Claim extends AbstractEntity{
 	
 	
 	long id;
-	
+	long diand;
 	boolean injury;
 	InjuryInfo injuryInfo;
 	
@@ -18,6 +18,18 @@ public class Claim extends AbstractEntity{
 	
 	String comments;
 
+	/**
+	 * @return the diand
+	 */
+	public long getDiand() {
+		return diand;
+	}
+	/**
+	 * @param diand the diand to set
+	 */
+	public void setDiand(long diand) {
+		this.diand = diand;
+	}
 	/**
 	 * @return the id
 	 */
